@@ -1,0 +1,35 @@
+# Just Another Coding Assessment Project
+
+#### A neuron-busting exercise from Epicodus to see where I'm at with things, 6/4/19
+
+#### By **Anise Lester**
+
+## Description
+
+Have fun selecting fixed data, just as you would with a quiz. Ready to find out what kind of dragon you are?
+
+## Setup
+
+* Take this ( https://github.com/M00nDrag0n/CodingAssessment-2.git ) repository and clone it on Desktop
+* open the repository, you will see a file called "index.html". Double click "index.html".
+* The file should then show up on Google Chrome (or whatever browser you're using)
+* Fill in data and see what result you get!
+
+* Please note that this is a VERY simple quiz. Do not overthink your results.
+
+
+## Known Bugs
+
+_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- JQuery
+- BootStrap
+
+### Legal Stuff
+
+Copyright (c) 2019 Anise Lester
