@@ -1,6 +1,8 @@
 body {
-  font-family: 'Spectral'; font-size: 19px
-
+  font-family: 'Spectral';
+  font-size: 19px;
 }
 
-.questions
+.result {
+  display: none;
+}

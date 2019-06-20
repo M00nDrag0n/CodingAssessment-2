@@ -2,6 +2,7 @@
 <html>
   <head>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type=text/css>
+    <link rel="stylesheet" href="css/styles.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
@@ -9,93 +10,116 @@
   </head>
   <body>
     <h1>What Type Of Dragon Are You?</h1>
-    <div class="questions">
-      <p>What is your favorite color?</p>
-      <select class="form control" id="fav-color">
-        <option>Red</option>
-        <option>Orange</option>
-        <option>Yellow</option>
-        <option>Green</option>
-        <option>Blue</option>
-        <option>Indigo</option>
-        <option>Purple</option>
-        <option>Pink</option>
-        <option>White</option>
-        <option>Silver</option>
-        <option>Black</option>
-      </select>
-      <p>Where do you like to be?</p>
-      <select class="form control" id="habitat">
-        <option>Forest</option>
-        <option>Jungle</option>
-        <option>Cave</option>
-        <option>Desert</option>
-        <option>Mountains</option>
-        <option>River</option>
-        <option>Meadow (includes gardens of any kind)</option>
-        <option>Cave</option>
-        <option>Beach</option>
-        <option>Ocean (underwater)</option>
-        <option>Underground</option>
-        <option>In the air (helicopter, airplane, high altitude land)</option>
-      </select>
-      <p>How well do you get along with other people?</p>
-      <select class="form control" id="social">
-        <option>Not at all</option>
-        <option>Not too much</option>
-        <option>Depends on the person</option>
-        <option>Fine, as long as they don't bother me</option>
-        <option>I get along ok</option>
-        <option>I try to get along with everyone</option>
-        <option>Everyone loves me</option>
-        <option>I love everyone</option>
-        <option>No food, no friendship</option>
-        <option>Very well</option>
-        <option>I am friendly</option>
-    </select>
-      <p>How is your temperament?</p>
-      <select class="form control" id="temperament">
-        <option>I bite</option>
-        <option>I like attention</option>
-        <option>I am a sleepy existence</option>
-        <option>I am grouchy</option>
-        <option>I am rambunctious</option>
-        <option>I cause mischief</option>
-        <option>I bite REALLY HARD</option>
-        <option>I am timid</option>
-        <option>I am polite</option>
-        <option>I am not to be provoked</option>
-      </select>
-      <p>What do you like to eat?</p>
-      <select class="form control" id="food">
-        <option>Creamy things</option>
-        <option>Sweet things</option>
-        <option>Sour things</option>
-        <option>Spicy things</option>
-        <option>Flavorful things</option>
-        <option>Meaty things</option>
-        <option>Fishy things</option>
-        <option>Many, many things</option>
-        <option>A very specific food and that's it</option>
-        <option>If it exists, I'll eat it</option>
-        <option>Plant-based things</option>
-      </select>
-      <p>Describe yourself with one word.</p>
-      <select class="form control" id="adjective">
-        <option>Talkative</option>
-        <option>Hungry</option>
-        <option>Sleepy</option>
-        <option>Grumpy</option>
-        <option>Aggressive</option>
-        <option>Shy</option>
-        <option>Curious</option>
-        <option>Playful</option>
-        <option>Wise</option>
-        <option>Flamboyant</option>
-        <option>Misunderstood</option>
-      </select>
+
+    <form id= "personalityQuiz">
+
+      <h3>What is your favorite color?</h3>
+
+        <input type="radio" name="color" value="H-E">Red</br>
+        <input type="radio" name="color" value="A-W">Orange</br>
+        <input type="radio" name="color" value="A-W">Yellow</br>
+        <input type="radio" name="color" value="A-E">Green</br>
+        <input type="radio" name="color" value="H-E">Blue</br>
+        <input type="radio" name="color" value="A-E">Indigo</br>
+        <input type="radio" name="color" value="A-W">Purple</br>
+        <input type="radio" name="color" value="H-W">Pink</br>
+        <input type="radio" name="color" value="A-E">White</br>
+        <input type="radio" name="color" value="H-W">Silver</br>
+        <input type="radio" name="color" value="H-W">Black</br>
+        <input type="radio" name="color" value="H-E">Gold</br>
+
+      <h3>Where do you like to be?</h3>
+
+        <input type="radio" name="habitat" value="H-W">Forest</br>
+        <input type="radio" name="habitat" value="A-E">Jungle</br>
+        <input type="radio" name="habitat" value="H-W">Cave</br>
+        <input type="radio" name="habitat" value="A-W">Desert</br>
+        <input type="radio" name="habitat" value="A-W">Mountains</br>
+        <input type="radio" name="habitat" value="H-E">River</br>
+        <input type="radio" name="habitat" value="A-E">Meadow (includes gardens of any kind)</br>
+        <input type="radio" name="habitat" value="H-W">Cave</br>
+        <input type="radio" name="habitat" value="H-E">Beach</br>
+        <input type="radio" name="habitat" value="A-E">Ocean (underwater)</br>
+        <input type="radio" name="habitat" value="H-W">Underground</br>
+        <input type="radio" name="habitat" value="A-E">In the air (helicopter, airplane, high altitude land)</br>
+
+      <h3>How well do you get along with other people?</h3>
+
+        <input type="radio" name="social" value="H-W">Not at all<br>
+        <input type="radio" name="social" value="H-E">Not too much<br>
+        <input type="radio" name="social" value="H-W">Depends on the person<br>
+        <input type="radio" name="social" value="A-W">Fine, as long as they don't bother me<br>
+        <input type="radio" name="social" value="A-E">I get along ok<br>
+        <input type="radio" name="social" value="A-E">I try to get along with everyone<br>
+        <input type="radio" name="social" value="H-E">Everyone loves me<br>
+        <input type="radio" name="social" value="H-W">I love everyone<br>
+        <input type="radio" name="social" value="H-E">No food, no friendship<br>
+        <input type="radio" name="social" value="A-W">Very well<br>
+        <input type="radio" name="social" value="A-W">I am friendly<br>
+
+      <h3>How is your temperament?</h3>
+
+        <input type="radio" name="temperament" value="H-W">I bite</br>
+        <input type="radio" name="temperament" value="H-E">I like attention</br>
+        <input type="radio" name="temperament" value="A-E">I am a sleepy existence</br>
+        <input type="radio" name="temperament" value="A-W">I am grouchy</br>
+        <input type="radio" name="temperament" value="H-E">I am rambunctious</br>
+        <input type="radio" name="temperament" value="H-W">I cause mischief</br>
+        <input type="radio" name="temperament" value="A-W">I bite REALLY HARD</br>
+        <input type="radio" name="temperament" value="H-W">I am timid</br>
+        <input type="radio" name="temperament" value="A-E">I am polite</br>
+        <input type="radio" name="temperament" value="A-W">I am not to be provoked</br>
+
+      <h3>What do you like to eat?</h3>
+
+        <input type="radio" name="food" value="H-W">Creamy things</br>
+        <input type="radio" name="food" value="H-E">Sweet things</br>
+        <input type="radio" name="food" value="H-W">Sour things</br>
+        <input type="radio" name="food" value="A-E">Spicy things</br>
+        <input type="radio" name="food" value="H-E">Flavorful things</br>
+        <input type="radio" name="food" value="H-W">Meaty things</br>
+        <input type="radio" name="food" value="A-E">Fishy things</br>
+        <input type="radio" name="food" value="A-W">Many, many things</br>
+        <input type="radio" name="food" value="H-E">A very specific food and that's it</br>
+        <input type="radio" name="food" value="A-W">If it exists, I'll eat it</br>
+        <input type="radio" name="food" value="A-E">Plant-based things</br>
+
+      <h3>Describe yourself with one word.</h3>
+        <input type="radio" name="adjective" value="H-W">Talkative</br>
+        <input type="radio" name="adjective" value="A-W">Hungry</br>
+        <input type="radio" name="adjective" value="H-W">Sleepy</br>
+        <input type="radio" name="adjective" value="A-E">Grumpy</br>
+        <input type="radio" name="adjective" value="H-W">Aggressive</br>
+        <input type="radio" name="adjective" value="H-W">Shy</br>
+        <input type="radio" name="adjective" value="H-E">Curious</br>
+        <input type="radio" name="adjective" value="H-E">Playful</br>
+        <input type="radio" name="adjective" value="A-E">Wise</br>
+        <input type="radio" name="adjective" value="A-W">Flamboyant</br>
+        <input type="radio" name="adjective" value="A-W">Misunderstood</br>
+
+        <input type="submit" value="Submit">
+
+      </form>
+
+    <div class="result" id="H-W">
+      <h2>You are a Hatchling! (Western variety)</h2>
+      <img src="https://i.pinimg.com/originals/66/a8/48/66a84855baef212c1ca59f1b87fb9452.jpg">
     </div>
+
+    <div class="result" id="H-E">
+      <h2>You are a Hatchling! (Eastern variety)</h2>
+      <img src="https://i.pinimg.com/originals/13/96/17/13961773d5d1edc6802dabb2109850d3.jpg">
+    </div>
+
+    <div class="result" id="A-W">
+      <h2>You are an Adult! (Western variety)</h2>
+      <img src="https://wallpapertag.com/wallpaper/full/e/c/0/709754-download-red-eyes-black-dragon-vs-blue-eyes-white-dragon-wallpaper-1920x1080-for-phones.jpg">
+    </div>
+
+    <div class="result" id="A-E">
+      <h2>You are an Adult! (Eastern variety)</h2>
+      <img src="https://carwad.net/sites/default/files/chinese-dragons-105313-6586208.jpg">
+    </div>
+
   </body>
-
-
 </html>
